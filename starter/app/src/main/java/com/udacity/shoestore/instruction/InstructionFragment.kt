@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.udacity.shoestore.R
+import com.udacity.shoestore.databinding.FragmentInstructionsBinding
+import com.udacity.shoestore.databinding.FragmentLoginBinding
 
 class InstructionFragment : Fragment() {
 
@@ -13,12 +17,12 @@ class InstructionFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_login, container, false)
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-                InstructionFragment()
+        val binding: FragmentInstructionsBinding = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_instructions, container, false
+        )
+        binding.buttonOpenShoeList.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_instructionFragment_to_shoeListFragment)
+        )
+        return binding.root
     }
 }

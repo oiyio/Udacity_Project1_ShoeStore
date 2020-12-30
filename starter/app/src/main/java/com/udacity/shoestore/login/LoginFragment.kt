@@ -17,14 +17,14 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding: FragmentLoginBinding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_login, container, false)
-        binding.button.setOnClickListener (
-                Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_welcomeFragment))
+            inflater, R.layout.fragment_login, container, false
+        )
+        binding.buttonLogin.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_welcomeFragment)
+        )
+        binding.buttonRegister.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_loginFragment_to_welcomeFragment)
+        )
         return binding.root
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) = LoginFragment()
     }
 }
