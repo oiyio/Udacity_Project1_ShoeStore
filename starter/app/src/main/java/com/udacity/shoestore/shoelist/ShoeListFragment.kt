@@ -13,6 +13,7 @@ import com.udacity.shoestore.databinding.FragmentWelcomeBinding
 
 class ShoeListFragment : Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
