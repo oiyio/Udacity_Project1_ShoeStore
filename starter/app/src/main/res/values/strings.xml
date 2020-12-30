@@ -5,4 +5,10 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="shoe_size">Shoe size</string>
+    <string name="description">Description</string>
+    <string name="company">Company</string>
 </resources>
