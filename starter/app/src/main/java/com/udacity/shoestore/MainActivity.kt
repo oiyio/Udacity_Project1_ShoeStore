@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+/*    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.overflow_menu, menu)
         return super.onCreateOptionsMenu(menu)
@@ -34,5 +34,5 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return item.onNavDestinationSelected(findNavController(R.id.navHostFragment))
                 || super.onOptionsItemSelected(item)
-    }
+    }*/
 }
