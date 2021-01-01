@@ -1,8 +1,3 @@
-remainings :
-12. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration
-13. In MainActivity, add a Logout menu to return to the login screen
-
-
 # The Shoe Store
 
 This project will consist of five screens. You don't have to create a shoe store, you can use any other item as long as you create the following screens. You will be creating:
