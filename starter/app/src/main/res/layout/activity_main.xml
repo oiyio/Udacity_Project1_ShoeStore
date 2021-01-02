@@ -18,3 +18,7 @@
 
 </layout>
 
+    <!--
+    I used linearLayout because i need a ViewGroup.
+    I can rather choose constraintLayout but does not want to waste time with setting constraints.
+    -->

@@ -5,6 +5,13 @@
 
     <data>
 
+        <variable
+            name="viewmodel"
+            type="com.udacity.shoestore.shoedetail.ShoeDetailViewModel" />
+
+        <!-- <variable
+             name="shoe"
+             type="com.udacity.shoestore.models.Shoe" />-->
     </data>
 
     <FrameLayout
@@ -34,6 +41,7 @@
                 android:ems="10"
                 android:hint="Enter shoe name"
                 android:inputType="textEmailAddress"
+                android:text="@={viewmodel.shoe.name}"
                 app:layout_constraintBottom_toTopOf="@+id/textViewCompany"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -57,6 +65,7 @@
                 android:ems="10"
                 android:hint="Enter company name"
                 android:inputType="text"
+                android:text="@={viewmodel.shoe.company}"
                 app:layout_constraintBottom_toTopOf="@+id/textViewShoeSize"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -80,6 +89,7 @@
                 android:ems="10"
                 android:hint="Enter shoe size"
                 android:inputType="number"
+                android:text="@={`` + viewmodel.shoe.size}"
                 app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -103,6 +113,7 @@
                 android:ems="10"
                 android:hint="Enter description"
                 android:inputType="textPersonName"
+                android:text="@={viewmodel.shoe.description}"
                 app:layout_constraintBottom_toTopOf="@+id/buttonSave"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -138,3 +149,10 @@
 
     </FrameLayout>
 </layout>
+
+
+    <!--
+    I want to center some layouts horizontally and some vertically in this layout.
+    I used constraintLayout because i think it is more readable and easier to implement with constraintLayout in this case.
+    If i use LinearLayout, xml code would be ugly.
+    -->

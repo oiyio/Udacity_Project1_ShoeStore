@@ -97,3 +97,9 @@
 
     </FrameLayout>
 </layout>
+
+    <!--
+    I want to center some layouts horizontally and some vertically in this layout.
+    I used constraintLayout because i think it is more readable and easier to implement with constraintLayout in this case.
+    If i use LinearLayout, xml code would be ugly.
+    -->
