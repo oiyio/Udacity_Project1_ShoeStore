@@ -8,10 +8,6 @@
         <variable
             name="viewmodel"
             type="com.udacity.shoestore.shoedetail.ShoeDetailViewModel" />
-
-        <!-- <variable
-             name="shoe"
-             type="com.udacity.shoestore.models.Shoe" />-->
     </data>
 
     <FrameLayout
